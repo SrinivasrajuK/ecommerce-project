@@ -1,0 +1,15 @@
+package com.ecommerce.inventory_service.events;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class InventoryUpdatedEvent {
+
+    private Long orderId;
+    private Long productId;
+    private String status;
+}
